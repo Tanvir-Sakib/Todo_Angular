@@ -1,0 +1,14 @@
+:host {
+  .all-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 800px;
+    margin-inline: auto;
+    margin-top: 24px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+}
+}

@@ -1,0 +1,19 @@
+<div class="container">
+  <a mat-raised-button href="/add-task">Add Task</a>
+  <a mat-raised-button href="/task-list">Task List</a>
+  <mat-form-field class="example-form-field">
+    <mat-label>Clearable input</mat-label>
+    <input matInput type="text" [(ngModel)]="value" (ngModelChange)="valuechange()">
+    @if (value) {
+      <button matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    }
+  </mat-form-field>
+  
+</div>
+<div class="all-tasks">
+  @for(task of allTasks; track $index){
+  <app-task-tile [task]="task"></app-task-tile>
+  }
+</div>
