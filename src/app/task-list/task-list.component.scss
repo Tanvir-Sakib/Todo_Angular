@@ -1,14 +1,28 @@
 :host {
   .all-tasks {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 800px;
-    margin-inline: auto;
-    margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 400px;
+      margin-inline: auto;
+      margin-top: 24px;
+      background: transparent;
   }
   .container{
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.input{
+  height: 50px;
+}
+.search{
+  height: 10px;
+ 
+}
+.example-form-field {
+  width: 100x;
+  height: 20px;
 }
 }

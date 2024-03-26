@@ -1,11 +1,14 @@
-<div class="container">
-    <a mat-raised-button href="/add-task">Add Task</a>
-    <a mat-raised-button href="/task-list">Task List</a>
-    
-  </div>
-  <div class="all-tasks">
-    @for(task of allTasks; track $index){
-    <app-task-details [task]="task" (taskDeleted)="deleteTask($event)"></app-task-details>
-    }
+
+  <div>
+    <div class="container">
+      <a mat-raised-button style="margin-right:5px" color="priority" href="/add-task">Add Task</a>
+      <a mat-raised-button style="margin-right:5px" color="priority" href="/task-list">Task List</a>
+    </div>
+    <div class="all-tasks">
+      @for(task of allTasks; track $index){
+      <app-task-details [task]="task" (taskDeleted)="deleteTask($event)"></app-task-details>
+      }
+    </div>
+
   </div>
   

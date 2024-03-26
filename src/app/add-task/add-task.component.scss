@@ -10,8 +10,16 @@
   .toggle-group {
     max-width: min-content;
   }
-  .container{
-    display: flex;
-    justify-content: center;
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
+.input {
+  font-size: 130%;
+  color: #624689;
+  display: flex;
+  justify-content: center;
+}
+
 }

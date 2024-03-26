@@ -2,6 +2,20 @@
 .container{
     display: flex;
     justify-content: center;
+    padding: 20px;
+}
+.title {
+    padding: 10px;
+    font-size: 400%;
+    color: #624689;
+    display: flex;
+    justify-content: center;
+}
+.input {
+    font-size: 130%;
+    color: #624689;
+    display: flex;
+    justify-content: center;
 }
 
 }

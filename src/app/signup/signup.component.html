@@ -1,41 +1,26 @@
-<div class="container">
-    <div>
-    <div class="container">
-        <H1 class="container">
+<div>
+    <div class="title container input">
+        <h1>
             Please Sign up with necessary informations
-        </H1>
+        </h1>
     </div>
-    <div class="container">
-        <mat-form-field class="example-form-field" appearance="outline">
+    <div class="input">
+      <form class="user-form" [formGroup]="userform" (ngSubmit)="adduser()">
+        <mat-form-field>
             <mat-label>User Name</mat-label>
-            <input matInput type="text">
-        </mat-form-field>
+            <input matInput type="text" formControlName="userName" />
+          </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="text" formControlName="email" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="text" formControlName="password" />
+      </mat-form-field>
+      <div class="input">
+      <button style=" width: 100px; height: 30px;"type="submit">Submit</button>
     </div>
-
-    <div class="container"> 
-        <mat-form-field class="example-form-field" appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput type="text">
-        </mat-form-field>
+    </form>
     </div>
-
-    <div class="container">
-        <mat-form-field class="example-form-field" appearance="outline">
-            <mat-label>Phone Number</mat-label>
-            <input matInput type="text">
-        </mat-form-field>
-    </div>
-
-    <div class="container">
-        <mat-form-field class="example-form-field" appearance="outline">
-            <mat-label>Password</mat-label>
-            <input matInput type="text">
-        </mat-form-field>
-    </div>
-
-    <div class="container">
-        <!-- <button mat-stroked-button type="submit">Submit</button> -->
-        <a mat-raised-button href="/login">Submit</a>
-    </div>
-</div>
-</div>
+  </div>
