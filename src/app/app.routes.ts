@@ -7,7 +7,7 @@ import { TaskDetailsComponent } from './task-details/task-details.component';
 import { DetailsComponent } from './details/details.component';
 
 export const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: "",redirectTo: "login",pathMatch: 'full'},
   { path: 'add-task', component: AddTaskComponent },
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},

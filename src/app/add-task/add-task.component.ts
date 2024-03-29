@@ -1,6 +1,6 @@
 import { JsonPipe } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder,ReactiveFormsModule, } from '@angular/forms';
+import { FormBuilder,ReactiveFormsModule, Validators, } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -41,11 +41,11 @@ title: any;
     private router: Router
   ) {}
   taskForm = this.formBuilder.group({
-    title: '',
-    description: '',
-    category: '',
-    date: '',
-    priority: '',
+    title: ['', [Validators.required]],
+    description: ['', [Validators.required]],
+    category: ['', [Validators.required]],
+    date: ['', [Validators.required]],
+    priority: ['', [Validators.required]],
   });
 
   addTask() {
@@ -53,4 +53,8 @@ title: any;
       this.router.navigateByUrl('/task-list');
     });
   }
+  navigeteTo(path: string){
+    this.router.navigateByUrl(path);
+  }
+  
 }

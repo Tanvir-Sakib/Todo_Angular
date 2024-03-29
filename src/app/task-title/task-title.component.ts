@@ -5,8 +5,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { TaskService } from '../task.service';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-import {MatCardModule} from '@angular/material/card';
-import {RouterModule} from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-task-tile',
@@ -24,7 +24,7 @@ export class TaskTitleComponent {
 
   constructor(
     private taskService: TaskService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
   ) {}
 
 }

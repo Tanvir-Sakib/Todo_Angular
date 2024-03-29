@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { user } from './User.interface';
+import { User } from './User.interface';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -12,11 +12,11 @@ export class UserService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getAlluser(): Observable<user[]> {
-    return this.httpClient.get<user[]>(this.baseUrl);
+  getAlluser(): Observable<User[]> {
+    return this.httpClient.get<User[]>(this.baseUrl);
   }
 
-  adduser() {
-    return this.httpClient.post(this.baseUrl,{});
+  onSubmit(user: User) {
+    return this.httpClient.post(this.baseUrl, user);
   }
 }

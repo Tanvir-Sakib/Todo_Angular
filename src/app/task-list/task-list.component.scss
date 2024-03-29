@@ -14,8 +14,12 @@
     padding-top: 20px;
     margin-bottom: 10px;
 }
-.input{
-  height: 50px;
+input[type=text] {
+  width: 100%;
+  // padding: 12px 20px;
+  margin: 8px 0;
+
+  height: 5px;
 }
 .search{
   height: 10px;

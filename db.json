@@ -1,15 +1,21 @@
 {
   "tasks": [
     {
-      "id": "e224",
-      "title": "sdzgfjgdm",
-      "description": "dfxgcvb",
-      "category": "Self",
-      "date": "2024-03-29T18:00:00.000Z",
-      "priority": "medium",
-      "Status": "TODO",
-      "status": "DONE"
+      "id": "c7fa",
+      "title": "Search Bar Operation",
+      "description": "Searching will work by matching title of the tasks.",
+      "category": "Work",
+      "date": "2024-03-27T18:00:00.000Z",
+      "priority": "high",
+      "Status": "TODO"
     }
   ],
-  "user": []
+  "user": [
+    {
+      "id": "9bdb",
+      "userName": "Sakib",
+      "email": "agag@gmail.com",
+      "password": "afasgsg"
+    }
+  ]
 }

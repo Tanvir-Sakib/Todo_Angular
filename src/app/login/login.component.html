@@ -25,13 +25,13 @@
             </div>
         <div class="input">
             <!-- <button mat-stroked-button type="submit">Log In</button> -->
-            <a mat-raised-button color="priority" href="/task-list">Log In</a>
+            <button mat-raised-button style="margin-right:5px;" color="priority" (click)="navigeteTo('task-list')">Log In</button>
         </div>
         <div>
             <br>
         </div>
         <P class="input">
-            Don't Have an account <a style="margin-right:5px; margin-left:5px" href="/signup">SignUp</a> here
+            Don't Have an account <a style="margin-right:5px; margin-left:5px" (click)="navigeteTo('signup')">SignUp</a> here
         </P>
         </div>
     </div>

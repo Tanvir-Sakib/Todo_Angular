@@ -4,7 +4,7 @@
     margin-block: 32px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     width: min(100%, 300px);
   }
   .toggle-group {
@@ -15,8 +15,12 @@
   justify-content: center;
   padding: 20px;
 }
+.shundor{
+  display: flex;
+  justify-content: center;
+}
 .input {
-  font-size: 130%;
+  font-size: 140%;
   color: #624689;
   display: flex;
   justify-content: center;

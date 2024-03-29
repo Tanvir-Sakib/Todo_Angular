@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class TaskService {
-  private baseUrl = 'http://localhost:3000/tasks';
+  private baseUrl = 'http://localhost:3000/task/';
 
   constructor(private httpClient: HttpClient) {}
 
@@ -15,8 +15,12 @@ export class TaskService {
     return this.httpClient.get<Task[]>(this.baseUrl);
   }
 
+  getTask(id: string): Observable<Task> {
+    return this.httpClient.get<Task>(this.baseUrl + '/' + id);
+  }
+
   addTask(payload: Task) {
-    return this.httpClient.post(this.baseUrl, { ...payload, Status: 'TODO' });
+    return this.httpClient.post(this.baseUrl, { ...payload, status: 'TODO' });
   }
 
   deleteTask(id: string) {
