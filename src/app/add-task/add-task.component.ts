@@ -41,11 +41,11 @@ title: any;
     private router: Router
   ) {}
   taskForm = this.formBuilder.group({
-    title: ['', [Validators.required]],
-    description: ['', [Validators.required]],
-    category: ['', [Validators.required]],
-    date: ['', [Validators.required]],
-    priority: ['', [Validators.required]],
+    title: '',
+    description: '',
+    category: '',
+    date: '',
+    priority: '',
   });
 
   addTask() {

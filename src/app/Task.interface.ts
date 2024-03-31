@@ -1,5 +1,5 @@
 export interface Task {
-  id?: string;
+  _id?: string;
   title?: string;
   description?: string;
   category?: 'Work' | 'Study' | 'Self' | 'Good To Do';

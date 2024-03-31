@@ -29,7 +29,7 @@ export class TaskDetailsComponent {
 
   markAsDone() {
     this.taskService
-      .updateTask(this.task.id || '', {
+      .updateTask(this.task._id || '', {
         ...this.task,
         status: 'DONE',
       })
@@ -37,9 +37,9 @@ export class TaskDetailsComponent {
   }
 
   deleteTask() {
-    this.taskService.deleteTask(this.task.id || '').subscribe({
+    this.taskService.deleteTask(this.task._id || '').subscribe({
       next: () => {
-        this.taskDeleted.emit(this.task.id);
+        this.taskDeleted.emit(this.task._id);
       },
       error: (err) => {
         this.snackBar.open('Something went wrong');

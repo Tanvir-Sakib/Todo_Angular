@@ -24,7 +24,7 @@ export class DetailsComponent{
 
   // task!: Task;
   task: Task = {
-    id: '',
+    _id: '',
     title: '',
     description: '',
     category: 'Work',

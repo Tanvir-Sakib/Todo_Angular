@@ -16,7 +16,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 body {
-  background-image: url('img/todo.jpg'); /* Adjust the path to your image */
-  background-size: cover; /* This ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-image: url('img/todo.jpg');
+  background-size: cover; 
+  background-repeat: repeat;
 }
