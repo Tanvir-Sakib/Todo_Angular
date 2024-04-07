@@ -33,7 +33,7 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class AddTaskComponent {
   categoriesOfTask = ['Work', 'Study', 'Self' , 'Good To Do'];
-title: any;
+  title: any;
 
   constructor(
     private formBuilder: FormBuilder,
