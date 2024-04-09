@@ -65,10 +65,10 @@ export class LoginComponent {
 
   updateErrorMessagePassword() {
     if (this.password.hasError('required')) {
-      this.errorMessagePassword = 'Password Must be of Atlist 6 Character';
+      this.errorMessagePassword = 'Enter Your Password';
     } 
     else if (this.password.hasError('minlength')) {
-      this.errorMessagePassword = 'Password Must be of Atlist 6 Character';
+      this.errorMessagePassword = 'Enter Your Password';
     } else {
       this.errorMessagePassword = '';
     }

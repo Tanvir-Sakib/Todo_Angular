@@ -72,10 +72,10 @@ export class SignupComponent {
 
   updateErrorMessagePassword() {
     if (this.password.hasError('required')) {
-      this.errorMessagePassword = 'Password Must be of 6 Character';
+      this.errorMessagePassword = 'Password Must be of Atlist 6 Character';
     } 
     else if (this.password.hasError('minlength')) {
-      this.errorMessagePassword = 'Password Must be of 6 Character';
+      this.errorMessagePassword = 'Password Must be of Atlist 6 Character';
     } else {
       this.errorMessagePassword = '';
     }
