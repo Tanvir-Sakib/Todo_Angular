@@ -1,38 +1,52 @@
 <div>
     <div class="container">
-        <div >
-        <div class="title">
-            <h1>
-                Welcome, Write down your tasks and be  systematic
-            </h1>
-        </div>
+        <div>
+            <div class="title">
+                <h1>
+                    Welcome, Write down your tasks and be  systematic
+                </h1>
+            </div>
             <div class="title">
                 <h2>
                     Please Log In to access your tasks
                 </h2>
             </div>
             <div class="input">
-                <mat-form-field class="example-form-field" appearance="outline">
-                    <mat-label>Email</mat-label>
-                    <input matInput type="text">
-                </mat-form-field>
+                <form class="user-form">
+                    <mat-form-field>
+                        <mat-label>Enter your email</mat-label>
+                        <input matInput
+                          placeholder="Enter Your Email"
+                          [formControl]="email"
+                          (blur)="updateErrorMessageEmail()"
+                          required>
+                        @if (email.invalid) {
+                          <mat-error>{{errorMessageEmail}}</mat-error>
+                        }
+                    </mat-form-field>
+          
+                    <mat-form-field>
+                        <mat-label>Enter Your Password</mat-label>
+                        <input matInput
+                          placeholder="Enter Your Password"
+                          [formControl]="password"
+                          (blur)="updateErrorMessagePassword()"
+                          required>
+                        @if (password.invalid) {
+                          <mat-error>{{errorMessagePassword}}</mat-error>
+                        }
+                    </mat-form-field>
+                    <div class="input">
+                        <button style=" width: 100px; height: 30px;" type="button" (click)="authUser()" [disabled]="!isFormValid">Log In</button>
+                    </div>
+              </form>
             </div>
-            <div class="input"> 
-                <mat-form-field class="example-form-field" appearance="outline">
-                    <mat-label>Password</mat-label>
-                    <input matInput type="text">
-                </mat-form-field>
+            <div>
+                <br>
             </div>
-        <div class="input">
-            <!-- <button mat-stroked-button type="submit">Log In</button> -->
-            <button mat-raised-button style="margin-right:5px;" color="priority" (click)="navigeteTo('task-list')">Log In</button>
-        </div>
-        <div>
-            <br>
-        </div>
-        <P class="input">
-            Don't Have an account <a style="margin-right:5px; margin-left:5px" (click)="navigeteTo('signup')">SignUp</a> here
-        </P>
+            <P class="input">
+                Don't Have an account <a style="margin-right:5px; margin-left:5px" (click)="navigeteTo('signup')">Log In</a> here
+            </P>
         </div>
     </div>
 </div>

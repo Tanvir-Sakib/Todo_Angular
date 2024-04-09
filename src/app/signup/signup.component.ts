@@ -54,20 +54,10 @@ export class SignupComponent {
     .pipe(takeUntilDestroyed())
     .subscribe(() => this.updateErrorMessageUserName());
 
-    merge(this.userName.statusChanges, this.userName.valueChanges)
+    merge(this.password.statusChanges, this.password.valueChanges)
     .pipe(takeUntilDestroyed())
     .subscribe(() => this.updateErrorMessagePassword());
   }
-
-  // userform = this.formBuilder.group({
-  //   userName: ['', [Validators.required]],
-  //   email: ['', [Validators.required, Validators.email]],
-  //   passsword: ['', [Validators.required]],
-    
-  // });
-
-
-
 
   updateErrorMessageEmail() {
     if (this.email.hasError('required')) {
@@ -108,14 +98,6 @@ export class SignupComponent {
       this.isFormValid = true;
     } 
   }
-
-
-
-  // adduser() {
-  //   this.userservice.adduser(this.userform.value as user).subscribe((res) => {
-  //     this.router.navigateByUrl('/login');
-  //   });
-  // }
 
   onSubmit(){
     const user: User = {

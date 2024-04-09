@@ -2,6 +2,7 @@
   <div class="container">
     <button mat-raised-button style="margin-right:5px;" color="priority" (click)="navigeteTo('add-task')">Add Task</button>
     <button mat-raised-button style="margin-right:5px" color="priority" (click)="navigeteTo('task-list')">Task List</button>
+    <button mat-raised-button style="margin-right:5px" color="priority" (click)="logOut()">Log Out</button>
   </div>
   <div class="input">
     <form class="task-form" [formGroup]="taskForm" (ngSubmit)="addTask()">

@@ -1,24 +1,32 @@
 :host {
-.container{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-.title {
-    padding: 10px;
-    font-size: 400%;
-    color: #624689;
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-    font-family: Georgia;
-}
-.input {
-    font-size: 130%;
-    color: #624689;
-    display: flex;
-    justify-content: center;
-}
+    .user-form {
+        margin-inline: 100px;
+        margin-block: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: min(100%, 300px);
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .title {
+        padding: 10px;
+        font-size: 400%;
+        color: #624689;
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        font-family: Georgia;
+    }
+    .input {
+        font-size: 130%;
+        color: #624689;
+        display: flex;
+        justify-content: center;
+    }
 
 }
   

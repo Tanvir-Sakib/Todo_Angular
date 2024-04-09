@@ -39,4 +39,8 @@ export class TaskListComponent {
   navigeteTo(path: string){
     this.router.navigateByUrl(path);
   }
+  logOut(){
+    localStorage.removeItem("token");
+    this.router.navigateByUrl('/login');
+  }
 }

@@ -1,28 +1,23 @@
 
-  <div>
-    <div class="container">
-      <div class="container">
-        <button mat-raised-button style="margin-right:5px;" color="priority" (click)="navigeteTo('add-task')">Add Task</button>
-        <button mat-raised-button style="margin-right:5px" color="priority" (click)="navigeteTo('task-list')">Task List</button>
-        <!-- <mat-form-field class="example-form-field input">
-          <mat-label>Search Task</mat-label>
-          <input matInput type="text" [(ngModel)]="value" (ngModelChange)="valuechange()">
-          @if (value) {
-            <button matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          }
-        </mat-form-field> -->
-      </div>
-      
-
-      
-    </div>
-    <div class="all-tasks">
-      @for(task of allTasks; track $index){
-      <app-task-tile [task]="task"></app-task-tile>
-      }
-    </div>
-
+<div>
+  <div class="container">
+    <button mat-raised-button style="margin-right:5px;" color="priority" (click)="navigeteTo('add-task')">Add Task</button>
+    <button mat-raised-button style="margin-right:5px" color="priority" (click)="navigeteTo('task-list')">Task List</button>
+    <button mat-raised-button style="margin-right:5px" color="priority" (click)="logOut()">Log Out</button>
+    <!-- <mat-form-field class="example-form-field input">
+    <mat-label>Search Task</mat-label>
+    <input matInput type="text" [(ngModel)]="value" (ngModelChange)="valuechange()">
+    @if (value) {
+      <button matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    }
+    </mat-form-field> -->
   </div>
+  <div class="all-tasks">
+    @for(task of allTasks; track $index){
+      <app-task-tile [task]="task"></app-task-tile>
+    }
+  </div>
+</div>
 

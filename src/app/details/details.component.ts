@@ -46,7 +46,14 @@ export class DetailsComponent{
   deleteTask(id: string) {
     this.router.navigateByUrl('/task-list');
   }
+  
   navigeteTo(path: string){
     this.router.navigateByUrl(path);
   }
+
+  logOut(){
+    localStorage.removeItem("token");
+    this.router.navigateByUrl('/login');
+  }
+
 }
