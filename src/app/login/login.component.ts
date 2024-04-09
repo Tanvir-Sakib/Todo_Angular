@@ -98,7 +98,9 @@ export class LoginComponent {
         this.router.navigateByUrl("/task-list");
       }
       else{
-        this.snackBar.open('Incorrent Email or Password');
+        this.snackBar.open('Invalide User-Name or Password','Got It' ,{
+          duration: 3000
+        });
       }
     });
   }
