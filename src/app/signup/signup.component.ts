@@ -110,4 +110,7 @@ export class SignupComponent {
     });
   }
 
+  navigeteTo(path: string){
+    this.router.navigateByUrl(path);
+  }
 }
