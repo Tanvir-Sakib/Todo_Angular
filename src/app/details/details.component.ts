@@ -30,7 +30,7 @@ export class DetailsComponent{
     category: 'Work',
     status: 'TODO',
     date: new Date(),
-    priority: 'low', 
+    priority: 'Low', 
 };
 
   constructor(private taskService: TaskService, private router: Router , private route: ActivatedRoute ) {}

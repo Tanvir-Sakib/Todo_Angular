@@ -6,5 +6,5 @@ export interface Task {
   category?: 'Work' | 'Study' | 'Self' | 'Good To Do';
   status?: 'TODO' | 'DONE';
   date?: Date;
-  priority?: 'low' | 'high' | 'medium';
+  priority?: 'Low' | 'Medium' | 'High';
 }
