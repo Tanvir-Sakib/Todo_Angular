@@ -2,6 +2,7 @@
     <mat-card-header>
       <mat-card-title [routerLink]="['/details', task._id]">{{ task.title }}</mat-card-title>
   
+      <mat-card-subtitle><b>Assign To: {{ task.assignTo}}</b></mat-card-subtitle>
       <mat-card-subtitle>Deadline: {{ task.date | date : "longDate" }}</mat-card-subtitle>
     </mat-card-header>
 

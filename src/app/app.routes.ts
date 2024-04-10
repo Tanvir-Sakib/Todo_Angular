@@ -8,7 +8,7 @@ import { DetailsComponent } from './details/details.component';
 import { AuthGuardService } from './authguard.service';
 
 export const routes: Routes = [
-  { path: "",redirectTo: "login",pathMatch: 'full'},
+  { path: '',redirectTo: "login", pathMatch: 'full'},
   { path: 'add-task', component: AddTaskComponent, canActivate: [AuthGuardService] },
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},

@@ -42,6 +42,7 @@ export class AddTaskComponent {
   ) {}
   taskForm = this.formBuilder.group({
     title: '',
+    assignTo: '',
     description: '',
     category: '',
     date: '',
